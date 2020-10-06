@@ -25,6 +25,8 @@ O fluxo de pagamento utilizando o Bitfy Checkout deve ser:
 - Uma vez que o QRCODE é exibido na tela, o usuário pode ler o QRCODE diretamente pelo app da Bitfy, ou caso ele já esteja no celular, pode abrir o app da Bitfy diretamente.
 - Quando o usuário efetuar o pagamento, uma url de callback (cadastrada previamente no painel do Bitfy Checkout) será chamada, informando o site/e-commerce de que o pagamento foi realizado
 
+[Fluxo Bitfy Checkout](https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/bitfy-checkout-bitfy.png)
+
 ### Estratégias para monitoramento de pagamento
 
 Uma vez que não existe uma comunicação direta entre a API da Bitfy e o navegador/app onde a compra está ocorrendo, será necessário uma estratégia para reconhecer quando um pagamento é realizado. Pensando neste cenário, temos a seguinte sugestão:
