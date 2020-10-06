@@ -1,0 +1,301 @@
+.container {
+  width: 100%;
+  max-width: 1366px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .title {
+  font-size: 24px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E4EAEE;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container .cart-payment {
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .container .cart-payment {
+    width: 71%;
+  }
+}
+
+.container .cart-payment ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .cart-payment ul li {
+  width: 33.333%;
+}
+
+.container .cart-payment ul li a {
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  color: #1B2125;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .container .cart-payment ul li a {
+    font-size: 16px;
+  }
+}
+
+.container .cart-payment ul li a.disabled {
+  color: #D4D9DC;
+  border-color: #D4D9DC;
+}
+
+/* Payment methods */
+
+.container .payment-methods {
+  padding-top: 60px;
+}
+
+.container .payment-methods .title {
+  border: none;
+}
+
+.container .payment-methods .payment-method {
+  padding: 20px;
+  border: 1px solid #D4D9DC;
+  margin-bottom: 30px;
+}
+
+.container .payment-methods .payment-method.disabled {
+  opacity: .5;
+}
+
+.container .payment-methods .payment-method p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.container .payment-methods .payment-method p.big {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.container .payment-methods .payment-method p.payment-method-name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.container .payment-methods .payment-method .payment-method-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode {
+  background-color: #0062FF;
+  border-radius: 30px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container .payment-methods .payment-method .payment-method-qrcode {
+    width: 60%;
+  }
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode.button {
+  background-color: transparent;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode.button a {
+  margin: 0 auto;
+  width: 300px;
+  display: block;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode.button a:hover {
+  opacity: 0.9;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode.button a img {
+  display: block;
+  max-width: 100%;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode .bitfy-logo img {
+  width: 80px;;
+}
+
+.container .payment-methods .payment-method a.small-button {
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  color: #0062ff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode-image {
+  margin: 30px 0;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode-image-wrapper {
+  width: 190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode-image img {
+  width: 190px;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode-image img[alt=success] {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode-image span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #999;
+  margin: 20px 0 10px 0;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.container .payment-methods .payment-method a.small-button {
+  width: 170px;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.container .payment-methods .payment-method .payment-method-qrcode.success .payment-method-description {
+  opacity: 0;
+}
+
+.container .payment-methods .payment-method .stores {
+  margin-top: 50px;
+}
+
+.container .payment-methods .payment-method .stores .stores-buttons {
+  margin: 20px 0;
+}
+
+.container .payment-methods .payment-method .stores .stores-buttons a {
+  margin: 0 10px;
+}
+
+/* Cart items */
+.container .cart-items {
+  padding: 30px;
+  background-color: #F8FAFB;
+}
+
+@media (min-width: 768px) {
+  .container .cart-items {
+    width: 29%;
+  }
+}
+
+.container .cart-items:first-child {
+  display: block;
+}
+
+.container .cart-items:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container .cart-items:first-child {
+    display: none;
+  }
+
+  .container .cart-items:last-child {
+    display: block;
+  }
+}
+
+.container .cart-items .cart-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.container .cart-items .cart-item .cart-item-image {
+  width: 88px;
+  margin-right: 20px;
+}
+
+.container .cart-items .cart-item .cart-item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.container .cart-items .cart-item .cart-item-description p:last-child {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.container .cart-items .cart-items-values {
+  border-top: 1px solid #E4EAEE;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.container .cart-items .cart-items-values p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.container .cart-items .cart-items-values hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #E4EAEE;
+}
+
+/* Loader */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #666666;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
