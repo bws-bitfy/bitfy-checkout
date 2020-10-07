@@ -22,9 +22,9 @@ A integração do Bitfy Checkout ocorre via API Restful e é simples e de fácil
 
 O fluxo de pagamento utilizando o Bitfy Checkout deve ser:
 
-- No momento em que o usuário escolhe pagar com Criptomoedas, um QRCODE deve ser solicitado via API
+- No momento em que o usuário escolhe pagar com Criptomoedas, um QRCODE deve ser solicitado via API.
 - Uma vez que o QRCODE é exibido na tela do computador, o usuário pode ler o QRCODE diretamente pelo app da Bitfy. Caso ele esteja fazendo a compra no celular, poderá abrir o app da Bitfy tocando no botão "abrir app da Bitfy".
-- Quando o usuário efetuar o pagamento, uma url de callback (cadastrada previamente no painel do Bitfy Checkout) será chamada, informando o site/e-commerce de que o pagamento foi realizado
+- Quando o usuário efetuar o pagamento, uma url de callback (cadastrada previamente no painel do Bitfy Checkout) será chamada, informando o site/e-commerce de que o pagamento foi realizado.
 
 <br/><br/>
 <img src="https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/bitfy-checkout-bitfy.png">
