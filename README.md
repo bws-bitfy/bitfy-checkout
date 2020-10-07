@@ -41,7 +41,7 @@ Uma vez que não existe uma comunicação direta entre a API da Bitfy e o navega
 
 Uma vez que a URL de callback do site/e-commerce será chamada sempre que um pagamento for realizado, o status da compra poderá ser alterado na base de dados do site/e-commerce, e uma estratégia de ***polling*** poderá ser adotada, a fim de verificar de tempos em tempos, na API do próprio site/e-commerce, quando o status de uma compra foi alterado.
 
-## Como funciona
+## Código de exemplo
 
 Neste repositório está disponível uma integração de exemplo, utilizando inclusive, a estratégia de ***polling*** proposta no tópico anterior.
 
