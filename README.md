@@ -20,6 +20,10 @@ Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta 
 
 A integração do Bitfy Checkout ocorre via API Restful e é simples e de fácil implementação.
 
+[Documentação da API (Swagger)](https://app.swaggerhub.com/apis-docs/bitfy/bitfy-checkout/1.0.0)
+
+<br/>
+
 O fluxo de pagamento utilizando o Bitfy Checkout deve ser:
 
 - No momento em que o usuário escolhe pagar com Criptomoedas, um QRCODE deve ser solicitado via API.
@@ -28,7 +32,6 @@ O fluxo de pagamento utilizando o Bitfy Checkout deve ser:
 
 <br/><br/>
 <img src="https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/bitfy-checkout-bitfy.png">
-[bitfy-checkout-bitfy.png](https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/bitfy-checkout-bitfy.png)
 <br/><br/><br/>
 ### Estratégias para monitoramento de pagamento
 
