@@ -6,6 +6,7 @@
 - O que é preciso realizar a integração
 - Como funciona
 - Código de exemplo
+- Assets
 
 ## O que é o Bitfy Checkout
 
@@ -13,7 +14,7 @@ Bitfy Checkout é a forma mais rápida e prática de você aceitar criptomoedas 
 
 ## O que é preciso para realizar a integração
 
-Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta em https://bitfy.app e enviar os docuentos da sua empresa para análise. Com os documentos aprovados você já tem acesso aos chaves de integração da API.
+Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta em https://bitfy.app e enviar os documentos da sua empresa para análise. Com os documentos aprovados você já tem acesso às chaves de integração da API.
 
 ## Como funciona
 
@@ -67,3 +68,9 @@ Rode o projeto
 ```bash
 yarn start
 ```
+
+## Assets
+
+#### Botão "Pagar com Criptomoedas" da Bitfy
+<br/>
+<img src="https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/pay-with-bitfy.png" width="300">
