@@ -3,7 +3,7 @@
 ### Conteúdo
 
 - O que é o Bitfy Checkout
-- O que é preciso realizar a integração
+- O que é preciso realizar para a integração
 - Como funciona
 - Código de exemplo
 - Assets
@@ -12,7 +12,7 @@
 
 Bitfy Checkout é a forma mais rápida e prática de você aceitar criptomoedas no seu site ou e-commerce.
 
-## O que é preciso para realizar a integração
+## O que é preciso para realizar para a integração
 
 Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta em https://bitfy.app e enviar os documentos da sua empresa para análise. Com os documentos aprovados você já tem acesso às chaves de integração da API.
 
