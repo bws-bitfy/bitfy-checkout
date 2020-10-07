@@ -10,6 +10,7 @@ import BitfyPlayStore from '../assets/bitfy-play-store.png';
 
 let interval = null;
 let count = 0;
+let countLimit = 30;
 
 const PaymentMethod = ({ item }) => {
   const [ qrcode, setQrcode ] = useState(null);
@@ -35,7 +36,7 @@ const PaymentMethod = ({ item }) => {
           console.log(e);
         });
 
-      if (count === 10) {
+      if (count === countLimit) {
         clearInterval(interval);
       }
     }, 5000);
@@ -44,6 +45,10 @@ const PaymentMethod = ({ item }) => {
   async function handleGenerateQRCODE(e) {
     e.preventDefault();
 
+    /**
+     * cart_id - Seu número de identificação do carrinho ou compra
+     * value - Valor da compra em "centavos"
+     */
     const params = {
       cart_id: 1,
       value: 30980
@@ -72,8 +77,8 @@ const PaymentMethod = ({ item }) => {
         {(item.id === 1 && !qrcode) && (
           <div className="payment-method-qrcode button">
             {!pending ? (
-              <a href="#" onClick={handleGenerateQRCODE}>
-                <img src={PayButton} />
+              <a href="?button" onClick={handleGenerateQRCODE}>
+                <img src={PayButton} alt="Generate QRCODE" />
               </a>
             ) : (
               <div className="loader"></div>
@@ -105,17 +110,17 @@ const PaymentMethod = ({ item }) => {
               <div className="stores">
                 <p>Ainda não temo app da Bitfy?<br/><strong>Baixe agora!</strong></p>
                 <div className="stores-buttons">
-                  <a href="">
-                    <img src={BitfyAppStore} />
+                  <a href="https://apps.apple.com/us/app/bitfy-a-carteira-de-bitcoin/id1483269793">
+                    <img src={BitfyAppStore} alt="Bitfy on App Store" />
                   </a>
-                  <a href="">
-                    <img src={BitfyPlayStore} />
+                  <a href="https://play.google.com/store/apps/details?id=com.bitfyapp&hl=pt_BR">
+                    <img src={BitfyPlayStore} alt="Bitfy on Play Store" />
                   </a>
                 </div>
               </div>
             )}
             <a href="https://bitfy.app" className="bitfy-logo">
-              <img src={LogoBitfy} />
+              <img src={LogoBitfy} alt="Bitfy logo" />
             </a>
           </div>
         )}

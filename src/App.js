@@ -27,9 +27,9 @@ function App() {
 
       <div className="cart-payment">
         <ul>
-          <li><a href="#" className="disabled">01 Dados do cliente</a></li>
-          <li><a href="#" className="disabled">02 Endereço de entrega</a></li>
-          <li><a href="#">03 Pagamento</a></li>
+          <li><a href="?customer-data" className="disabled">01 Dados do cliente</a></li>
+          <li><a href="?customer-address" className="disabled">02 Endereço de entrega</a></li>
+          <li><a href="?payment">03 Pagamento</a></li>
         </ul>
 
         <div className="payment-methods">
