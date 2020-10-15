@@ -14,7 +14,7 @@ Bitfy Checkout é a forma mais rápida e prática de você aceitar criptomoedas 
 
 ## O que é preciso para realizar para a integração
 
-Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta em https://bitfy.app e enviar os documentos da sua empresa para análise. Com os documentos aprovados você já tem acesso às chaves de integração da API.
+Para integrar o Bitfy Checkout ao seu site ou e-commerce, basta criar uma conta em https://bitfy.app/companies e enviar os documentos da sua empresa para análise. Com os documentos aprovados você já tem acesso às chaves de integração da API.
 
 ## Como funciona
 
