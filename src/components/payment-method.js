@@ -25,7 +25,7 @@ const PaymentMethod = ({ item }) => {
       count++;
       setTrying(count);
 
-      api.get(`/checkout/session/${session_id}`)
+      api.get(`/checkout/payment/${session_id}`)
         .then(response => {
           if (response.data.status === 'approved') {
             setSuccess(true);
@@ -56,7 +56,7 @@ const PaymentMethod = ({ item }) => {
 
     setPending(true);
     
-    api.post('/checkout/qrcode', params).then(response => {
+    api.post('/checkout/payment', params).then(response => {
       setPending(false);
       setQrcode(response.data)
       checkPaymentStatus(response.data.session_id);
