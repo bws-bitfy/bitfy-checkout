@@ -8,13 +8,13 @@ const Cart = () => {
     {
       id: 1,
       name: 'Bolsa leve para Notebook',
-      price: 99.90,
+      price: 7.90,
       image: itemBag
     },
     {
       id: 2,
       name: 'Smart Watch a prova d\'agua',
-      price: 199.90,
+      price: 4.90,
       image: itemWatch
     },
   ];
@@ -36,16 +36,16 @@ const Cart = () => {
       <div className="cart-items-values">
         <p className="text-gray">
           <strong>Sub Total</strong>
-          <span>R$ 299.80</span>
+          <span>R$ 12.80</span>
         </p>
         <p className="text-gray">
           <strong>Taxa de entrega</strong>
-          <span>R$ 10.00</span>
+          <span>R$ 3.00</span>
         </p>
-        <hr/>
+        <hr />
         <p className="black">
           <strong>Total</strong>
-          <span>R$ 309.80</span>
+          <span>R$ 15.80</span>
         </p>
       </div>
     </div>

@@ -13,10 +13,10 @@ let count = 0;
 let countLimit = 30;
 
 const PaymentMethod = ({ item }) => {
-  const [ qrcode, setQrcode ] = useState(null);
-  const [ pending, setPending ] = useState(null);
-  const [ trying, setTrying ] = useState(count);
-  const [ success, setSuccess ] = useState(false);
+  const [qrcode, setQrcode] = useState(null);
+  const [pending, setPending] = useState(null);
+  const [trying, setTrying] = useState(count);
+  const [success, setSuccess] = useState(false);
 
   function checkPaymentStatus(session_id) {
     console.log('Payment:', session_id);
@@ -27,7 +27,7 @@ const PaymentMethod = ({ item }) => {
 
       api.get(`/checkout/payment/${session_id}`)
         .then(response => {
-          if (response.data.status === 'approved') {
+          if (response.data.status === 'payment-in-process') {
             setSuccess(true);
             clearInterval(interval);
           }
@@ -51,11 +51,11 @@ const PaymentMethod = ({ item }) => {
      */
     const params = {
       cart_id: 1,
-      value: 30980
+      value: 1580
     };
 
     setPending(true);
-    
+
     api.post('/checkout/payment', params).then(response => {
       setPending(false);
       setQrcode(response.data)
@@ -87,13 +87,13 @@ const PaymentMethod = ({ item }) => {
         )}
         {(item.id === 1 && qrcode) && (
           <div className={`payment-method-qrcode ${success ? 'success' : ''}`}>
-            <p className="payment-method-description">Acesse o app da <strong>Bitfy</strong>, selecione <strong>"Pagar em Sites"</strong>,<br/>em seguida <strong>scaneie o QR code</strong>.</p>
+            <p className="payment-method-description">Acesse o app da <strong>Bitfy</strong>, selecione <strong>"Pagar em Sites"</strong>,<br />em seguida <strong>scaneie o QR code</strong>.</p>
             <div className="payment-method-qrcode-image">
               <div className="payment-method-qrcode-image-wrapper">
                 <img src={qrcode.qrcode} alt="qrcode" />
                 {success && <img src={SuccessIcon} alt="success" />}
               </div>
-              <br/>
+              <br />
               {!success ? (
                 <p>Aguardando pagamento... ({trying})</p>
               ) : (
@@ -108,7 +108,7 @@ const PaymentMethod = ({ item }) => {
             </div>
             {!success && (
               <div className="stores">
-                <p>Ainda não temo app da Bitfy?<br/><strong>Baixe agora!</strong></p>
+                <p>Ainda não temo app da Bitfy?<br /><strong>Baixe agora!</strong></p>
                 <div className="stores-buttons">
                   <a href="https://apps.apple.com/us/app/bitfy-a-carteira-de-bitcoin/id1483269793">
                     <img src={BitfyAppStore} alt="Bitfy on App Store" />
