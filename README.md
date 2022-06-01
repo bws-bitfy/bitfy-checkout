@@ -32,7 +32,7 @@ O fluxo de pagamento utilizando o Bitfy Checkout deve ser:
 - Quando a transação for confirmada na Blockchain, umr url de callback (cadastrada previamente no painel do Bitfy Checkout) será chamada, informando o site/e-commerce de que o pagamento foi confirmado.
 
 <br/><br/>
-<img src="https://bitfy-assets.s3-sa-east-1.amazonaws.com/checkout/bitfy-checkout-bitfy.png">
+<img src="https://bitfy-assets.s3.sa-east-1.amazonaws.com/checkout/pay-with-bitfy-flow.png">
 <br/><br/><br/>
 ### Estratégias para monitoramento de pagamento
 
